@@ -1,0 +1,46 @@
+/*
+Holding Page Stylesheet
+*/
+
+body {
+	/* fallback */
+	background-color: #1d2e3d;
+	overflow:hidden;
+	/* Safari 4-5, Chrome 1-9 */
+	background: -webkit-gradient(radial, center center, 0, center center, 460, from(#1d2e3d), to(#1d2328));
+	/* Safari 5.1+, Chrome 10+ */
+	background: -webkit-radial-gradient(circle, #1d2e3d, #1d2328);
+	/* Firefox 3.6+ #203038, #151b1f*/
+	background: -moz-radial-gradient(circle, #1d2e3d, #1d2328);
+	/* IE 10 */
+	background: -ms-radial-gradient(circle, #1d2e3d, #1d2328);
+	/* Opera cannot do radial gradients yet */
+	width:100%;
+}
+
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 480px) {
+	#logo {
+		background:url('/images/event-cloud-logo.png') no-repeat;
+		position:absolute;
+		top:25%;
+		left:50%;
+		width:279px;
+		height:90px;
+		margin:0 0 0 -138px;
+	}
+}
+
+@media only screen
+and (min-device-width: 481px) {
+	#logo {
+		background:url('/images/event-cloud-bg.png') no-repeat;
+		position:absolute;
+		top:30%;
+		left:50%;
+		width:739px;
+		height:334px;
+		margin:0 0 0 -367px;
+	}
+}
